@@ -28,7 +28,186 @@
 
 <h2>📚프로젝트 구조</h2>
 <details><summary>FE</summary>
-프론트 추가 예정
+📦paranmanzang-project
+ ┣ 📂app
+ ┃ ┣ 📂(page)
+ ┃ ┃ ┣ 📂List
+ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┣ 📂aboard
+ ┃ ┃ ┃ ┣ 📂add
+ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┣ 📂update
+ ┃ ┃ ┃ ┃ ┗ 📂[id]
+ ┃ ┃ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃ ┗ 📜page.tsx
+ ┃ ┃ ┃   📜.....
+ ┃ ┣ 📂api
+ ┃ ┃ ┣ 📂generate
+ ┃ ┃ ┃ ┣ 📜friend.api.ts
+ ┃ ┃ ┃ ┣ 📜group.api.ts
+ ┃ ┃ ┃ ┣ 📜groupPost.api.ts
+ ┃ ┃ ┃ ┣ 📜likeBook.api.ts\
+ ┃ ┃ ┃ ┣ 📜likePost.api.ts
+ ┃ ┃ ┃ ┣ 📜likeRoom.api.ts
+ ┃ ┃ ┃ ┣ 📜review.api.ts
+ ┃ ┃ ┃ ┣ 📜room.api.ts
+ ┃ ┃ ┃ ┣ 📜route.ts
+ ┃ ┃ ┃ ┗ 📜user.api.ts
+ ┃ ┃ ┃   📜 ..........
+ ┃ ┃ ┣ 📜authUtils.ts
+ ┃ ┃ ┣ 📜axios.ts
+ ┃ ┃ ┗ 📜requests.ts
+ ┃ ┣ 📂components
+ ┃ ┃ ┃ ┣ 📜Aboard.tsx
+ ┃ ┃ ┃ ┣ 📜AccountButton.tsx
+ ┃ ┃ ┃ ┣ 📜Alert.tsx
+ ┃ ┃ ┃ ┣ 📜BellService.tsx
+ ┃ ┃ ┃ ┣ 📜BookingList.tsx
+ ┃ ┃ ┃ ┣ 📜BookingModal.tsx
+ ┃ ┃ ┃ ┣ 📜Carousel.tsx
+ ┃ ┃ ┃ ┣ 📜CategorySelect.tsx
+ ┃ ┃ ┃ ┣ 📜Footer.tsx
+ ┃ ┃ ┃ ┣ 📜GroupBoard.tsx
+ ┃ ┃ ┃ ┣ 📜Header.tsx
+ ┃ ┃ ┃ ┣ 📜Map.tsx
+ ┃ ┃ ┃ ┣ 📜Nav.tsx
+ ┃ ┃ ┃ ┣ 📜NaverMap.tsx
+ ┃ ┃ ┃ ┗ 📜NaverMapAdd.tsx
+ ┃ ┃ ┣ 📂crud
+ ┃ ┃ ┃ ┣ 📜GroupAdd.tsx
+ ┃ ┃ ┃ ┣ 📜GroupPostAdd.tsx
+ ┃ ┃ ┃ ┣ 📜PostEditor.tsx
+ ┃ ┃ ┃ ┣ 📜RoomAdd.tsx
+ ┃ ┃ ┃ ┗ 📜RoomUpdate.tsx
+ ┃ ┃ ┣ 📂user
+ ┃ ┃ ┃ ┣ 📂admin
+ ┃ ┃ ┃ ┃ ┗ 📜RequestOne.tsx
+ ┃ ┃ ┃ ┣ 📜ComLikeList.tsx
+ ┃ ┃ ┃ ┣ 📜Register.tsx
+ ┃ ┃ ┃ ┣ 📜UserProfile.module.css
+ ┃ ┃ ┃ ┗ 📜UserProfile.tsx
+ ┃ ┃ ┗ 📜Modal.tsx
+ ┃ ┃  📜 ..........
+ ┃ ┣ 📂hooks
+ ┃ ┃ ┣ 📜useBookImage.ts
+ ┃ ┃ ┣ 📜useChatRoom.ts
+ ┃ ┃ ┗ 📜useUser.ts
+ ┃ ┣ 📂model
+ ┃ ┃ ┣ 📂chat
+ ┃ ┃ ┃ ┗ 📜chat.model.ts
+ ┃ ┃ ┣ 📂comment
+ ┃ ┃ ┃ ┗ 📜comment.model.ts
+ ┃ ┃ ┣ 📂common
+ ┃ ┃ ┃ ┗ 📜page.model.ts
+ ┃ ┃ ┣ 📂file
+ ┃ ┃ ┃ ┗ 📜file.model.ts
+ ┃ ┃ ┣ 📂group
+ ┃ ┃ ┃ ┣ 📜book.model.ts
+ ┃ ┃ ┃ ┣ 📜category.model.ts
+ ┃ ┃ ┃ ┗ 📜group.model.ts
+ ┃ ┃ ┣ 📂room
+ ┃ ┃ ┃ ┣ 📜account.model.ts
+ ┃ ┃ ┃ ┣ 📜address.model.ts
+ ┃ ┃ ┃ ┣ 📜bookings.model.ts
+ ┃ ┃ ┃ ┣ 📜review.model.ts
+ ┃ ┃ ┃ ┗ 📜room.model.ts
+ ┃ ┃ ┣ 📂user
+ ┃ ┃ ┃ ┣ 📜user.model.ts
+ ┃ ┃ ┃ ┗ 📜users.model.ts
+ ┃ ┃ ┣ 📜error.model.ts
+ ┃ ┃ ┗ 📜user.model.ts
+ ┃ ┣ 📂queries
+ ┃ ┃ ┣ 📜useBookQuery.ts
+ ┃ ┃ ┣ 📜useGroupQuery.ts
+ ┃ ┃ ┗ 📜useRoomQuery.ts
+ ┃ ┣ 📂service
+ ┃ ┃ ┣ 📂chat
+ ┃ ┃ ┃ ┣ 📜chatMessage.service.ts
+ ┃ ┃ ┃ ┣ 📜chatRoom.service.ts
+ ┃ ┃ ┃ ┗ 📜chatUser.service.ts
+ ┃ ┃ ┣ 📂comment
+ ┃ ┃ ┃ ┗ 📜comment.service.ts
+ ┃ ┃ ┣ 📂file
+ ┃ ┃ ┃ ┗ 📜file.service.ts
+ ┃ ┃ ┣ 📂group
+ ┃ ┃ ┃ ┣ 📜book.service.ts
+ ┃ ┃ ┃ ┣ 📜category.service.ts
+ ┃ ┃ ┃ ┣ 📜group.service.ts
+ ┃ ┃ ┃ ┣ 📜groupPost.service.ts
+ ┃ ┃ ┃ ┣ 📜likeBook.service.ts
+ ┃ ┃ ┃ ┗ 📜likePost.service.ts
+ ┃ ┃ ┣ 📂room
+ ┃ ┃ ┃ ┣ 📜account.service.ts
+ ┃ ┃ ┃ ┣ 📜address.service.ts
+ ┃ ┃ ┃ ┣ 📜booking.service.ts
+ ┃ ┃ ┃ ┣ 📜review.service.ts
+ ┃ ┃ ┃ ┣ 📜room.service.ts
+ ┃ ┃ ┃ ┗ 📜time.service.ts
+ ┃ ┃ ┣ 📂user
+ ┃ ┃ ┃ ┣ 📜login.service.ts
+ ┃ ┃ ┃ ┣ 📜logout.service.ts
+ ┃ ┃ ┃ ┗ 📜user.service.ts
+ ┃ ┃ ┗ 📂users
+ ┃ ┃ ┃ ┣ 📜adminPost.service.ts
+ ┃ ┃ ┃ ┣ 📜declarationPost.service.ts
+ ┃ ┃ ┃ ┣ 📜friend.service.ts
+ ┃ ┃ ┃ ┣ 📜likePost.service.ts
+ ┃ ┃ ┃ ┗ 📜likeRoom.service.ts
+ ┃ ┣ 📜QueryProvider.tsx
+ ┃ ┣ 📜StoreProvider.tsx
+ ┃ ┣ 📜globals.css
+ ┃ ┣ 📜layout.tsx
+ ┃ ┗ 📜page.tsx
+ ┣ 📂lib
+ ┃ ┣ 📂features
+ ┃ ┃ ┣ 📂chat
+ ┃ ┃ ┃ ┗ 📜chat.slice.ts
+ ┃ ┃ ┣ 📂comment
+ ┃ ┃ ┃ ┗ 📜comment.slice.ts
+ ┃ ┃ ┣ 📂file
+ ┃ ┃ ┃ ┗ 📜file.slice.ts
+ ┃ ┃ ┣ 📂group
+ ┃ ┃ ┃ ┣ 📜book.slice.ts
+ ┃ ┃ ┃ ┗ 📜group.slice.ts
+ ┃ ┃ ┣ 📂room
+ ┃ ┃ ┃ ┣ 📜account.slice.ts
+ ┃ ┃ ┃ ┣ 📜address.slice.ts
+ ┃ ┃ ┃ ┣ 📜booking.slice.ts
+ ┃ ┃ ┃ ┣ 📜review.slice.ts
+ ┃ ┃ ┃ ┗ 📜room.slice.ts
+ ┃ ┃ ┣ 📂users
+ ┃ ┃ ┃ ┣ 📜adminPost.slice.ts
+ ┃ ┃ ┃ ┣ 📜declarationPost.slice.ts
+ ┃ ┃ ┃ ┣ 📜friend.slice.ts
+ ┃ ┃ ┃ ┗ 📜user.slice.ts
+ ┃ ┃ ┣ 📜auth.slice.ts
+ ┃ ┃ ┣ 📜data.slice.ts
+ ┃ ┃ ┗ 📜error.slice.ts
+ ┃ ┗ 📜store.ts
+ ┣ 📂public
+ ┃ ┣ 📂assets
+ ┃ ┃ ┣ 📜btnG.png
+ ┃ ┃ ┣ 📜paran.png
+ ┃ ┃ ┣ 📜paranLogo.png
+ ┃ ┃ ┗ 📜paran_logo_favicon.png
+ ┃ ┣ 📜.DS_Store
+ ┃ ┗ 📜.gitkeep
+ ┣ 📜.DS_Store
+ ┣ 📜.env.local
+ ┣ 📜.eslintrc.json
+ ┣ 📜.gitignore
+ ┣ 📜LICENSE
+ ┣ 📜README.md
+ ┣ 📜naver.d.ts
+ ┣ 📜next-env.d.ts
+ ┣ 📜next.config.mjs
+ ┣ 📜package.json
+ ┣ 📜postcss.config.js
+ ┣ 📜prettier.config.js
+ ┣ 📜tailwind.config.ts
+ ┣ 📜tsconfig.json
+ ┣ 📜yarn 2.lock
+ ┗ 📜yarn.lock
 
 </details>
 
@@ -554,6 +733,6 @@
   [발표자료](https://github.com/paranmanzang/paran_msa/blob/master/paranmanzang%20final_rev1.pptx)</li>
  <li>
   
-  [발표영상](https://www.youtube.com/)</li>
+  [발표영상](https://youtu.be/PUvr9OLc0JA)</li>
 </ul>
 
