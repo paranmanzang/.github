@@ -212,21 +212,6 @@
 </details>
 
 <details><summary>BE</summary> 
-├── .gitignore</br>
-├── .gitmodules</br>
-├── Jenkinsfile</br>
-├── back_output.txt</br>
-├── build.gradle</br>
-├── database</br>
-│   └── docker-compose.yaml</br>
-├── docker-compose.yaml</br>
-├── file_source.json</br>
-├── gradle</br>
-│   └── wrapper</br>
-│       ├── gradle-wrapper.jar</br>
-│       └── gradle-wrapper.properties</br>
-├── gradlew</br>
-├── gradlew.bat</br>
 ├── server</br>
 │   ├── config-server</br>
 │   ├── eureka-server</br>
@@ -240,10 +225,6 @@
 │   │   └── resources</br>
 │   │       └── application.yaml</br>
 │   ├── gateway-server</br>
-│   │   ├── .gitignore</br>
-│   │   ├── Dockerfile</br>
-│   │   ├── build.gradle</br>
-│   │   ├── gateway.yaml</br>
 │   │   └── src</br>
 │   │       └── gatewayserver</br>
 │   │           ├── Enum</br>
@@ -260,7 +241,6 @@
 │   │           ├── GatewayException.java</br>
 │   │           ├── GatewayServerApplication.java</br>
 │   │           ├── config</br>
-│   │           │   ├── .DS_Store</br>
 │   │           │   ├── MongoConfig.java</br>
 │   │           │   ├── RedisConfig.java</br>
 │   │           │   ├── SecurityConfig.java</br>
