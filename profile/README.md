@@ -28,6 +28,7 @@
 
 <h2>📚프로젝트 구조</h2>
 <details><summary>FE</summary>
+``` 
 📦paranmanzang-project
  ┣ 📂app
  ┃ ┣ 📂(page)
@@ -208,6 +209,7 @@
  ┣ 📜tsconfig.json
  ┣ 📜yarn 2.lock
  ┗ 📜yarn.lock
+```
 
 </details>
 
