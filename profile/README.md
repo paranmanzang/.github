@@ -17,7 +17,7 @@
 <div align="center">
     <table>
         <tr>
-            <td><img src="https://via.placeholder.com/100" alt="임청하👑"/><br/><a href="https://github.com/chenghaLim">임청하👑 (BackEnd)</a></td>
+            <td><img src="https://github.com/user-attachments/assets/adb74647-19ed-4942-83be-3d1d932aed2d" alt="임청하👑"/><br/><a href="https://github.com/chenghaLim">임청하👑 (BackEnd)</a></td>
             <td><img src="https://via.placeholder.com/100" alt="강은석"/><br/><a href="https://github.com/MeteoRiver">강은석 (BackEnd)</a></td>
             <td><img src="https://via.placeholder.com/100" alt="김주영"/><br/><a href="https://github.com/Jyservice781">김주영 (FrontEnd)</a></td>
             <td><img src="https://via.placeholder.com/100" alt="송지현"/><br/><a href="https://github.com/Songj2">송지현 (BackEnd)</a></td>
